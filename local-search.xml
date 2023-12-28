@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>DW: Introduction to Data Warehouses</title>
+    <link href="/2023/10/12/DW-Introduction-to-Data-Warehouses/"/>
+    <url>/2023/10/12/DW-Introduction-to-Data-Warehouses/</url>
+    
+    <content type="html"><![CDATA[<p>In this article, we’re diving into the world of data warehousing. We’ll break down the basics, explore how it all started, and uncover why it’s become such a big deal in the business world. </p><p>A data warehouse, often abbreviated as DW, is a system designed for storing, analyzing, and reporting data effectively.</p><p>The main goal of a data warehouse is to create an integrated data environment made specifically for analysis, aiding crucial decision-making in businesses.</p><p><strong>I. Understanding How Data Warehousing Began</strong></p><p>A data warehouse doesn’t create data itself; it gathers data from various external systems. Similarly, it doesn’t consume data directly; instead, its outcomes are shared with different applications. This is why it’s called a “warehouse” and not a “factory.”</p><p>In simple terms: its purpose is analyzing data to support business decisions.</p><p>Within a business setting, information usually serves two main purposes: maintaining records and guiding analytical decisions.</p><p>For instance, let’s look at China Life Insurance Company, where I previously interned, to understand why data warehousing emerged. They manage several lines of business, like life insurance, property insurance, auto insurance, and pension insurance. Smooth operations across these areas need careful handling of vast amounts of customer information, policy records, financial transactions, and claims data.</p><p><img src="/images/DW1.jpg" alt="Structure of DW"></p><p>Online transaction systems (OLTP) handle these operations well by processing transactions swiftly. These systems process user data quickly, providing prompt results.</p><p>Common databases like Oracle, MySQL, and SQL Server are typical OLTP tools.</p><p>As the group’s business grows, so does the volume of data. This growth poses challenges:</p><ul><li>Identifying issues in insurance categories.</li><li>Crafting effective policies.</li><li>Detecting potential fraud.</li><li>Ensuring reports cover all business lines.</li></ul><p>OLTP systems focus on transactions. All business operations involve reading and writing data. Reading operations usually exert more pressure. However, conducting various analyses directly within an OLTP environment raises concerns:</p><ul><li>Analyzing data means more reading, increasing pressure.</li><li>OLTP systems store data briefly.</li><li>Data is scattered across systems with inconsistent structures.</li></ul><p>While analyzing smaller datasets within an OLTP environment might work, building an integrated data analytics platform becomes crucial for larger-scale analysis without affecting OLTP systems.</p><p>This platform aims to focus on analysis, supporting analytical tasks without impacting OLTP systems. This marked the beginning of data warehousing in enterprises.</p><p><strong>II. Creating a Data Warehouse</strong></p><p>A data warehouse specializes in storing, analyzing, and reporting data, creating an integrated environment for analysis—part of a broader category called OLAP (Online Analytical Processing) systems.</p><p>For instance, China Life Insurance Company can create a data warehouse tailored for analytical decision-making.</p><p><strong>III. Structure of the Data Warehouse</strong></p><p><strong>ODS Layer (Operation Data Store):</strong> This layer stores raw, unprocessed data in the data warehouse system, aligning with the source system’s structure. It prepares data for the warehouse while recording historical changes.</p><p><strong>DW Layer (Data Warehouse):</strong> Derived from the ODS layer, it manages data processing and integration. It establishes consistent dimensions, creates detailed fact tables for analysis, and consolidates common indicators. </p><p><strong>ADS Layer:</strong> This layer provides tailored business data for end-users, including reports, charts, KPIs, and data analysis tools.</p><p>Benefits of Layering:</p><ul><li>Organized data structure.</li><li>Tracing data sources.</li><li>Reducing repetitive work.</li><li>Simplifying tasks for better maintenance.</li><li>Shielding original data from issues.</li></ul><p>Thank you for reading!</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>DW</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>NLP: Sentiment Analysis with LSTM</title>
     <link href="/2023/09/14/NLP-Sentiment-Analysis-with-LSTM/"/>
     <url>/2023/09/14/NLP-Sentiment-Analysis-with-LSTM/</url>
