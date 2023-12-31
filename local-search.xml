@@ -5,8 +5,8 @@
   
   <entry>
     <title>Build Chatbots: Your Own Multi-Document Assistant</title>
-    <link href="/2024/12/20/Develop-a-Multi-Document-Chatbot-with-LangChain-and-LLM/"/>
-    <url>/2024/12/20/Develop-a-Multi-Document-Chatbot-with-LangChain-and-LLM/</url>
+    <link href="/2023/12/20/Develop-a-Multi-Document-Chatbot-with-LangChain-and-LLM/"/>
+    <url>/2023/12/20/Develop-a-Multi-Document-Chatbot-with-LangChain-and-LLM/</url>
     
     <content type="html"><![CDATA[<p>Welcome to this tutorial where we’ll build a powerful chatbot to answer questions from various documents (PDF, DOC, TXT). I’ve used <strong>LangChain</strong>, <strong>OpenAI API</strong>, and <strong>Large Language Models from Hugging Face</strong> to create a question&#x2F;answer pipeline, and employed <strong>Streamlit</strong> for crafting a user-friendly web interface. In this blog, I will introduce LangChain, a cutting-edge framework for developing applications using LLMs.</p>]]></content>
     
