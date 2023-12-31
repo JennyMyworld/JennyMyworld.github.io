@@ -16,22 +16,24 @@
   <meta name="author" content="Jinrong Qu">
   <meta name="keywords" content="">
   
-    <meta name="description" content="HiveQL, the SQL-like language for querying data in Apache Hive, empowers users to interact with structured data in a distributed computing environment. Below are some frequently used commands: Data De">
+    <meta name="description" content="Welcome to this tutorial where we’ll build a powerful chatbot to answer questions from various documents (PDF, DOC, TXT). I’ve used LangChain, OpenAI API, and Large Language Models from Hugging Face t">
 <meta property="og:type" content="article">
-<meta property="og:title" content="DW: Common Commands of HiveQL">
-<meta property="og:url" content="http://example.com/2023/09/28/DW-Common-Commands-of-HiveQL/index.html">
+<meta property="og:title" content="Build Chatbots: Your Own Multi-Document Assistant">
+<meta property="og:url" content="http://example.com/2024/12/20/Develop-a-Multi-Document-Chatbot-with-LangChain-and-LLM/index.html">
 <meta property="og:site_name" content="Jinrong Qu">
-<meta property="og:description" content="HiveQL, the SQL-like language for querying data in Apache Hive, empowers users to interact with structured data in a distributed computing environment. Below are some frequently used commands: Data De">
+<meta property="og:description" content="Welcome to this tutorial where we’ll build a powerful chatbot to answer questions from various documents (PDF, DOC, TXT). I’ve used LangChain, OpenAI API, and Large Language Models from Hugging Face t">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2023-09-28T15:27:05.000Z">
-<meta property="article:modified_time" content="2023-12-31T17:24:38.247Z">
+<meta property="article:published_time" content="2024-12-19T16:41:21.000Z">
+<meta property="article:modified_time" content="2023-12-31T17:27:04.300Z">
 <meta property="article:author" content="Jinrong Qu">
-<meta property="article:tag" content="DW">
+<meta property="article:tag" content="AI">
+<meta property="article:tag" content="LLM">
+<meta property="article:tag" content="NLP">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>DW: Common Commands of HiveQL - Jinrong Qu</title>
+  <title>Build Chatbots: Your Own Multi-Document Assistant - Jinrong Qu</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -197,7 +199,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="DW: Common Commands of HiveQL"></span>
+            <span id="subtitle" data-typed-text="Build Chatbots: Your Own Multi-Document Assistant"></span>
           
         </div>
 
@@ -208,8 +210,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-09-28 23:27" pubdate>
-          September 28, 2023 pm
+        <time datetime="2024-12-20 00:41" pubdate>
+          December 20, 2024 am
         </time>
       </span>
     
@@ -220,7 +222,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          2.3k words
+          356 words
         
       </span>
     
@@ -231,7 +233,7 @@
         
         
         
-          20 mins
+          3 mins
         
       </span>
     
@@ -268,60 +270,12 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">DW: Common Commands of HiveQL</h1>
+            <h1 id="seo-header">Build Chatbots: Your Own Multi-Document Assistant</h1>
             
             
               <div class="markdown-body">
                 
-                <p>HiveQL, the SQL-like language for querying data in Apache Hive, empowers users to interact with structured data in a distributed computing environment. Below are some frequently used commands:</p>
-<h2 id="Data-Definition-Language-DDL-Commands"><a href="#Data-Definition-Language-DDL-Commands" class="headerlink" title="Data Definition Language (DDL) Commands"></a>Data Definition Language (DDL) Commands</h2><h3 id="1-CREATE-TABLE"><a href="#1-CREATE-TABLE" class="headerlink" title="1. CREATE TABLE"></a>1. CREATE TABLE</h3><p>Creates a new table in Hive.</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> my_table (<br>  id <span class="hljs-type">INT</span>,<br>  name STRING,<br>  age <span class="hljs-type">INT</span><br>);<br></code></pre></td></tr></table></figure>
-
-<h3 id="2-ALTER-TABLE"><a href="#2-ALTER-TABLE" class="headerlink" title="2. ALTER TABLE"></a>2. ALTER TABLE</h3><p>Modifies an existing table by adding, renaming, or dropping columns.</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">ALTER</span> <span class="hljs-keyword">TABLE</span> my_table<br><span class="hljs-keyword">ADD</span> <span class="hljs-keyword">COLUMN</span> email STRING;<br></code></pre></td></tr></table></figure>
-
-<h3 id="3-DROP-TABLE"><a href="#3-DROP-TABLE" class="headerlink" title="3. DROP TABLE"></a>3. DROP TABLE</h3><p>Deletes a table from the database.</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">DROP</span> <span class="hljs-keyword">TABLE</span> my_table;<br></code></pre></td></tr></table></figure>
-
-<h2 id="Data-Manipulation-Language-DML-Commands"><a href="#Data-Manipulation-Language-DML-Commands" class="headerlink" title="Data Manipulation Language (DML) Commands"></a>Data Manipulation Language (DML) Commands</h2><h3 id="1-INSERT-INTO"><a href="#1-INSERT-INTO" class="headerlink" title="1. INSERT INTO"></a>1. INSERT INTO</h3><p>Adds new rows of data into a table.</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> my_table (id, name, age, email)<br><span class="hljs-keyword">VALUES</span> (<span class="hljs-number">1</span>, <span class="hljs-string">&#x27;John Doe&#x27;</span>, <span class="hljs-number">30</span>, <span class="hljs-string">&#x27;john@example.com&#x27;</span>);<br></code></pre></td></tr></table></figure>
-
-<h3 id="2-SELECT"><a href="#2-SELECT" class="headerlink" title="2. SELECT"></a>2. SELECT</h3><p>Retrieves data from one or more tables based on specified conditions.</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">SELECT</span> <span class="hljs-operator">*</span> <span class="hljs-keyword">FROM</span> my_table <span class="hljs-keyword">WHERE</span> age <span class="hljs-operator">&gt;</span> <span class="hljs-number">25</span>;<br></code></pre></td></tr></table></figure>
-
-<h3 id="3-UPDATE"><a href="#3-UPDATE" class="headerlink" title="3. UPDATE"></a>3. UPDATE</h3><p>Modifies existing data in a table.</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">UPDATE</span> my_table <span class="hljs-keyword">SET</span> age <span class="hljs-operator">=</span> <span class="hljs-number">31</span> <span class="hljs-keyword">WHERE</span> id <span class="hljs-operator">=</span> <span class="hljs-number">1</span>;<br></code></pre></td></tr></table></figure>
-
-<h3 id="4-DELETE"><a href="#4-DELETE" class="headerlink" title="4. DELETE"></a>4. DELETE</h3><p>Removes rows from a table based on specified conditions.</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">DELETE</span> <span class="hljs-keyword">FROM</span> my_table <span class="hljs-keyword">WHERE</span> id <span class="hljs-operator">=</span> <span class="hljs-number">1</span>;<br></code></pre></td></tr></table></figure>
-
-<h3 id="5-JOIN"><a href="#5-JOIN" class="headerlink" title="5. JOIN"></a>5. JOIN</h3><p>Combines rows from two or more tables based on a related column between them.</p>
-<h4 id="Inner-Join"><a href="#Inner-Join" class="headerlink" title="Inner Join"></a>Inner Join</h4><p>Retrieves rows that have matching values in both tables.</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">SELECT</span> a.<span class="hljs-operator">*</span>, b.<span class="hljs-operator">*</span><br><span class="hljs-keyword">FROM</span> table_a a<br><span class="hljs-keyword">INNER</span> <span class="hljs-keyword">JOIN</span> table_b b <span class="hljs-keyword">ON</span> a.id <span class="hljs-operator">=</span> b.id;<br></code></pre></td></tr></table></figure>
-
-<h4 id="Left-Join-or-Left-Outer-Join"><a href="#Left-Join-or-Left-Outer-Join" class="headerlink" title="Left Join (or Left Outer Join)"></a>Left Join (or Left Outer Join)</h4><p>Retrieves all rows from the left table and matching rows from the right table. If there’s no match, NULL values are returned for the right table.</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">SELECT</span> a.<span class="hljs-operator">*</span>, b.<span class="hljs-operator">*</span><br><span class="hljs-keyword">FROM</span> table_a a<br><span class="hljs-keyword">LEFT</span> <span class="hljs-keyword">JOIN</span> table_b b <span class="hljs-keyword">ON</span> a.id <span class="hljs-operator">=</span> b.id;<br></code></pre></td></tr></table></figure>
-
-<h4 id="Right-Join-or-Right-Outer-Join"><a href="#Right-Join-or-Right-Outer-Join" class="headerlink" title="Right Join (or Right Outer Join)"></a>Right Join (or Right Outer Join)</h4><p>Retrieves all rows from the right table and matching rows from the left table. If there’s no match, NULL values are returned for the left table.</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">SELECT</span> a.<span class="hljs-operator">*</span>, b.<span class="hljs-operator">*</span><br><span class="hljs-keyword">FROM</span> table_a a<br><span class="hljs-keyword">RIGHT</span> <span class="hljs-keyword">JOIN</span> table_b b <span class="hljs-keyword">ON</span> a.id <span class="hljs-operator">=</span> b.id;<br></code></pre></td></tr></table></figure>
-
-<h4 id="Full-Join-or-Full-Outer-Join"><a href="#Full-Join-or-Full-Outer-Join" class="headerlink" title="Full Join (or Full Outer Join)"></a>Full Join (or Full Outer Join)</h4><p>Retrieves all rows when there is a match in either the left or right table. If there’s no match, NULL values are returned for the unmatched side.</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">SELECT</span> a.<span class="hljs-operator">*</span>, b.<span class="hljs-operator">*</span><br><span class="hljs-keyword">FROM</span> table_a a<br><span class="hljs-keyword">FULL</span> <span class="hljs-keyword">OUTER</span> <span class="hljs-keyword">JOIN</span> table_b b <span class="hljs-keyword">ON</span> a.id <span class="hljs-operator">=</span> b.id;<br></code></pre></td></tr></table></figure>
-
-<h3 id="6-UNION"><a href="#6-UNION" class="headerlink" title="6. UNION"></a>6. UNION</h3><p>Combines the results of two or more SELECT statements into a single result set.</p>
-<h2 id="Additional-Commands"><a href="#Additional-Commands" class="headerlink" title="Additional Commands"></a>Additional Commands</h2><h3 id="1-SHOW-DATABASES"><a href="#1-SHOW-DATABASES" class="headerlink" title="1. SHOW DATABASES"></a>1. SHOW DATABASES</h3><p>Lists all databases in the Hive environment.</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">SHOW</span> DATABASES;<br></code></pre></td></tr></table></figure>
-
-<h3 id="2-SHOW-PARTITIONS"><a href="#2-SHOW-PARTITIONS" class="headerlink" title="2. SHOW PARTITIONS"></a>2. SHOW PARTITIONS</h3><p>Displays partition information for a specified table.</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">SHOW</span> PARTITIONS table_name;<br></code></pre></td></tr></table></figure>
-
-<h3 id="3-SET"><a href="#3-SET" class="headerlink" title="3. SET"></a>3. SET</h3><p>Configures Hive parameters by setting values.</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">SET</span> parameter_name <span class="hljs-operator">=</span> <span class="hljs-keyword">value</span>;<br></code></pre></td></tr></table></figure>
-
-<h3 id="4-QUIT"><a href="#4-QUIT" class="headerlink" title="4. QUIT"></a>4. QUIT</h3><p>Exits the Hive environment.</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sql">QUIT;<br></code></pre></td></tr></table></figure>
-
-<p>These detailed HiveQL commands provide a comprehensive understanding of data manipulation techniques, particularly JOIN operations like Inner Join, Left Join, Right Join, and Full Join. Utilizing these operations in Apache Hive enables users to handle complex data relationships and merge data sets efficiently in distributed environments.</p>
+                <p>Welcome to this tutorial where we’ll build a powerful chatbot to answer questions from various documents (PDF, DOC, TXT). I’ve used <strong>LangChain</strong>, <strong>OpenAI API</strong>, and <strong>Large Language Models from Hugging Face</strong> to create a question&#x2F;answer pipeline, and employed <strong>Streamlit</strong> for crafting a user-friendly web interface. In this blog, I will introduce LangChain, a cutting-edge framework for developing applications using LLMs.</p>
 
                 
               </div>
@@ -340,8 +294,15 @@
     
       <span class="category-chain">
         
-  <a href="/categories/Data-Warehouse/" class="category-chain-item">Data Warehouse</a>
+  <a href="/categories/Natural-language-processing/" class="category-chain-item">Natural language processing</a>
   
+  
+    <span>></span>
+    
+  <a href="/categories/Natural-language-processing/Artificial-intelligence/" class="category-chain-item">Artificial intelligence</a>
+  
+  
+
   
 
       </span>
@@ -355,7 +316,11 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/DW/" class="print-no-link">#DW</a>
+        <a href="/tags/AI/" class="print-no-link">#AI</a>
+      
+        <a href="/tags/LLM/" class="print-no-link">#LLM</a>
+      
+        <a href="/tags/NLP/" class="print-no-link">#NLP</a>
       
     </div>
   
@@ -367,8 +332,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>DW: Common Commands of HiveQL</div>
-      <div>http://example.com/2023/09/28/DW-Common-Commands-of-HiveQL/</div>
+      <div>Build Chatbots: Your Own Multi-Document Assistant</div>
+      <div>http://example.com/2024/12/20/Develop-a-Multi-Document-Chatbot-with-LangChain-and-LLM/</div>
     </div>
     <div class="license-meta">
       
@@ -380,7 +345,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>Posted on</div>
-          <div>September 28, 2023</div>
+          <div>December 20, 2024</div>
         </div>
       
       
@@ -412,18 +377,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/10/12/NLP-Bag-of-Words-Model/" title="NLP: Bag of Words Model">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">NLP: Bag of Words Model</span>
-                        <span class="visible-mobile">Previous</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/09/15/DW-Introduction-to-Apache-Hive/" title="DW: Introduction to Apache Hive">
-                        <span class="hidden-mobile">DW: Introduction to Apache Hive</span>
+                      <a href="/2023/10/28/NLP-Sentiment-Analysis-with-LSTM/" title="NLP: Sentiment Analysis with LSTM">
+                        <span class="hidden-mobile">NLP: Sentiment Analysis with LSTM</span>
                         <span class="visible-mobile">Next</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
