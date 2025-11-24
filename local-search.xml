@@ -8,7 +8,7 @@
     <link href="/2024/09/01/About-Me/"/>
     <url>/2024/09/01/About-Me/</url>
     
-    <content type="html"><![CDATA[<p>Please click <a href="https://jennymyworld.github.io/about/">here: Jenny Qu</a></p><!-- <p style="text-align: center;">  <strong>Jenny Qu</strong><br>  <img src="/img/avatar.png" style="border-radius: 50%; width: 100px; height: auto;"><br>  Tech Innovator and Data Enthusiast</p><p style="text-align: center;">  <a href="mailto:jennyqu2023@gmail.com" style="margin-right: 10px;">    Mail  </a>  <a href="https://www.linkedin.com/in/jenny-q-232501280/">    LinkedIn  </a></p>Hi there, I'm Jenny Qu, a graduate student in **Software Engineering** at the School of Computer Science at Carnegie Mellon University. During my undergraduate studies, I majored in **Finance**. With an interdisciplinary background, I am eager to apply my technical skills in software engineering, data science, and financial knowledge to create products, making advanced technologies more accessible and beneficial to the public.In my free time, I enjoy trying new foods, baking, and swimming.Thanks for visiting my website! This blog is where I share my learning experiences and insights from my journey in tech. For further interaction, feel free to reach out to me via email or LinkedIn. Let's make progress together!### Professional Experience#### **[Mastercard](https://www.mastercard.com/global/en.html) - Data Engineer Intern** - Hive, Python, SQL, Excel PivotTable, ETL, Git- **Skills**: Problem-solving, Data analysis, Data visualization, Effective communication#### **[Meituan](https://www.meituan.com/en-US/about-us) - Business Data Analyst Intern** - Spark, Python, SQL, Tableau, Scikit-Learn, Git- **Skills**: Machine Learning, Regression prediction, A/B testing, Teamwork#### **[China Life Investment](https://www.chinalifeinvest.com/) - Investment Analyst Intern** - VBA, Excel, Bloomberg, Capital IQ- **Skills**: Due diligence, Equity valuation, Risk assessment, Report writing, Presentation### Projects#### **EasyBook: Full-Stack Hotel Booking App** - Java, Spring Boot, Restful APT, MySQL, React, Bootstrap, Axios, Postman, Spring Security, JWT#### **Data Warehouse Project**- Hadoop, Sqoop, Flume, Azkaban, HDFS, MySQL#### **[Multi-Document Reader and Chatbot](https://jennymyworld.github.io/2023/12/20/Develop-a-Multi-Document-Chatbot-with-LangChain-and-LLM/)** - LangChain, OpenAI API, Large Language Models, Hugging Face, Streamlit<!-- <a href="https://info.flagcounter.com/TNBh"><img src="https://s01.flagcounter.com/count2/TNBh/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_1/flags_0/percent_0/" alt="Flag Counter" border="0"></a> --> -->]]></content>
+    <content type="html"><![CDATA[<p>Please click <a href="https://jennymyworld.github.io/about/">here: Jenny Qu</a></p>]]></content>
     
     
     <categories>
@@ -45,11 +45,11 @@
     
     <tags>
       
+      <tag>NLP</tag>
+      
       <tag>AI</tag>
       
       <tag>LLM</tag>
-      
-      <tag>NLP</tag>
       
     </tags>
     
